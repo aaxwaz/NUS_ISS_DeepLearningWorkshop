@@ -1,4 +1,4 @@
-#Public Repo for NUS-ISS Deep Learning Masterclass series: Computer Vision
+# Public Repo for NUS-ISS Deep Learning Masterclass series: Computer Vision
 
 ### Instruction to set up the environment
 
