@@ -1,6 +1,6 @@
-# Public Repo for NUS-ISS Deep Learning Masterclass series: Computer Vision
+# NUS-ISS Deep Learning Masterclass series: Computer Vision
 
-### Instruction to set up the environment
+### Instructions to set up the environment
 
 * Refer to [Docker setup](Docker_setup.md)
 
