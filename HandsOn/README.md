@@ -1,6 +1,8 @@
-# NUS_ISS_DeepLearningWorkshop
-Public Repo for NUS ISS Deep Learning workshop
+# Deep Learning Hands On
 
-Data and scripts used for building Cats and Dogs model - using keras's VGG16 to extract high level features, and feed features into fc layer for prediction. 
+This folder contains scripts and data for building & testing the Cats and Dogs deep learning model. 
 
-Data, scripts as well as saved model weights can be downloaded from here. 
+Participants are encouraged to download this entire folder before coming to the workshop. The ipython notebook will be used through the workshop. 
+
+
+
