@@ -1,4 +1,5 @@
 import pandas as pd
+from keras.preprocessing import image
 
 
 def classify_images(test_dir, model):
@@ -10,7 +11,7 @@ def classify_images(test_dir, model):
     Returns:
         a pandas data frame with image id and predicted class (label)
     """
-    test_datagen = ImageDataGenerator(rescale=1./255)
+    test_datagen = image.ImageDataGenerator(rescale=1./255)
 
     test_generator = test_datagen.flow_from_directory(
         test_dir,
