@@ -39,18 +39,19 @@ docker pull zanelim/keras-tf-jupyter:0.1
 
 ### Instantiate container from image
 * Container are efficient, lightweight, self-contained systems that guarantees software will always run the same, regardless of where it’s deployed.
-* Replace "[local-directory]" with the path where you have downloaded source code and data for Cats_and_Dogs classification tutorial and run the following command
+* Replace "[local-directory]" with the path where you have downloaded source code and data for Cats_and_Dogs classification tutorial (the path where you have cloned this github respository locally) and run the following command
 
 ```
-docker run -rm -p 8888:8888 -v /[local-directory]:/src/ --name keras-tf-jupyter zanelime/keras-tf-jupyter:0.1
+docker run --rm -p 8888:8888 --name keras-tf-jupyter -e PASSWORD=workshop -v /[local-directory]:/src/NUS_ISS_DeepLearningWorkshop zanelim/keras-tf-jupyter:0.1
 ```
-* note if you are already using port 8888 to run a local jupyter notebook use the following command.
+* note if you are already using port 8888 to run a local jupyter notebook simply replace the host port to 8889 (or another port number) by running:
 ```
-docker run -rm -p 8889:8888 -v /[local-directory]:/src/ --name keras-tf-jupyter zanelime/keras-tf-jupyter:0.1
+docker run --rm -p 8889:8888 --name keras-tf-jupyter -e PASSWORD=workshop -v /[local-directory]:/src/NUS_ISS_DeepLearningWorkshop zanelim/keras-tf-jupyter:0.1
 ```
 * Running the instruction will 
 	* Instantiate a container
 	* Map the volume of local directory within the container 
 	* Print a URL to iPython notebook
-* Copy the URL into your browser and you will see a jupyter notebook interface.
+	* Pass the jupyter notebook password (`workshop` in this case) as an environment variable
+* Go to [http://localhost:8888](http://localhost:8888) or [http://localhost:8889](http://localhost:8889) and you will see a jupyter notebook interface, enter `workshop` as the password.
 * Once the local volume is mapped with the docker container, the files available in local volume will be visible within Docker container and hence the Jupyter notebook.

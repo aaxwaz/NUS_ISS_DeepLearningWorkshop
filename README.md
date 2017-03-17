@@ -1,6 +1,9 @@
-# NUS_ISS_DeepLearningWorkshop
-Public Repo for NUS ISS Deep Learning workshop
+# NUS-ISS Deep Learning Masterclass series: Computer Vision
 
-Data and scripts used for building Cats and Dogs model - using keras's VGG16 to extract high level features, and feed features into fc layer for prediction. 
+### Instructions to set up the environment
 
-Data, scripts as well as saved model weights can be downloaded from here. 
+* Refer to [Docker setup](Docker_setup.md)
+
+### Jupyter notebook and dataset for hands-on session
+
+* Refer to [Hands-on materials](/HandsOn)
