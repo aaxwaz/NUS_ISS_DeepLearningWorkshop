@@ -42,11 +42,11 @@ docker pull zanelim/keras-tf-jupyter:0.1
 * Replace "[local-directory]" with the path where you have downloaded source code and data for Cats_and_Dogs classification tutorial (the path where you have cloned this github respository locally) and run the following command
 
 ```
-docker run --rm -p 8888:8888 --name keras-tf-jupyter -e PASSWORD=workshop -v /[local-directory]:/src/NUS_ISS_DeepLearningWorkshop -v zanelim/keras-tf-jupyter:0.1
+docker run --rm -p 8888:8888 --name keras-tf-jupyter -e PASSWORD=workshop -v /[local-directory]:/src/NUS_ISS_DeepLearningWorkshop zanelim/keras-tf-jupyter:0.1
 ```
 * note if you are already using port 8888 to run a local jupyter notebook simply replace the host port to 8889 (or another port number) by running:
 ```
-docker run --rm -p 8889:8888 --name keras-tf-jupyter -e PASSWORD=workshop -v /[local-directory]:/src/NUS_ISS_DeepLearningWorkshop -v zanelim/keras-tf-jupyter:0.1
+docker run --rm -p 8889:8888 --name keras-tf-jupyter -e PASSWORD=workshop -v /[local-directory]:/src/NUS_ISS_DeepLearningWorkshop zanelim/keras-tf-jupyter:0.1
 ```
 * Running the instruction will 
 	* Instantiate a container
